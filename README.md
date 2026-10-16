@@ -44,11 +44,7 @@ The main idea implemented in this project is **Dynamic Tanh (DyT)**.
 
 Instead of applying LayerNorm, DyT applies the following transformation:
 
-\[
-\operatorname{DyT}(x)
-=
-\gamma \odot \tanh(\alpha x) + \beta
-\]
+\[\operatorname{DyT}(x)=\gamma \odot \tanh(\alpha x) + \beta\]
 
 where:
 

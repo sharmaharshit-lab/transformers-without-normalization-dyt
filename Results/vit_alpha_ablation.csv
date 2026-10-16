@@ -1,0 +1,5 @@
+Initial alpha,Best epoch,Validation accuracy (%),Validation loss,Mean epoch time (s)
+0.1,5,36.0,1.7303,12.69
+0.5,5,43.9,1.5215,12.66
+1.0,5,52.4,1.3229,12.69
+2.0,5,55.86,1.2249,12.75

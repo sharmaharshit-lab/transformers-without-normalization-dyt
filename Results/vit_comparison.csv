@@ -1,0 +1,3 @@
+Model,Normalization,Test loss,Test accuracy (%),Training epochs,Parameters,Initial alpha
+Small ViT - LayerNorm,LayerNorm,1.0413,65.12,20,281226,
+Small ViT - DyT,DyT,1.1312,58.81,20,281231,0.5

@@ -1,0 +1,3 @@
+Model,Normalization,Validation loss,Perplexity,Training time (s),Training steps,Parameters,Initial alpha
+Small GPT - LayerNorm,LayerNorm,2.221834044456482,9.224233014924353,18.06223242299984,1000,298305,
+Small GPT - DyT,DyT,2.4111117768287658,11.146346508683168,16.79019006099952,1000,298310,0.5

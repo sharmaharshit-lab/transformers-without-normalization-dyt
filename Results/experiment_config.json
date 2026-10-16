@@ -1,0 +1,57 @@
+{
+  "paper": "Transformers without Normalization",
+  "method": "Dynamic Tanh (DyT)",
+  "framework": "PyTorch",
+  "environment": {
+    "device": "cuda",
+    "python_and_torch_versions": "Record using the next cell"
+  },
+  "vit": {
+    "dataset": "CIFAR-10",
+    "image_size": 32,
+    "patch_size": 4,
+    "embedding_dim": 128,
+    "attention_heads": 4,
+    "transformer_blocks": 2,
+    "mlp_dim": 256,
+    "batch_size": 128,
+    "epochs_main_comparison": 20,
+    "learning_rate": 0.0003,
+    "optimizer": "AdamW",
+    "weight_decay": 0.05,
+    "dyt_alpha_main": 0.5,
+    "alpha_ablation": [
+      0.1,
+      0.5,
+      1.0,
+      2.0
+    ]
+  },
+  "gpt": {
+    "dataset": "Tiny Shakespeare",
+    "tokenization": "Character-level",
+    "vocabulary_size": 65,
+    "block_size": 128,
+    "embedding_dim": 128,
+    "attention_heads": 4,
+    "transformer_blocks": 2,
+    "mlp_dim": 256,
+    "batch_size": 64,
+    "training_steps": 1000,
+    "learning_rate": 0.0003,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "gradient_clipping": 1.0,
+    "dyt_alpha_main": 0.5,
+    "alpha_ablation": [
+      0.5,
+      1.0,
+      2.0
+    ]
+  },
+  "notes": [
+    "Reduced-scale experiments, not an exact reproduction of all paper results.",
+    "ViT alpha ablation uses validation accuracy after five epochs.",
+    "GPT alpha ablation uses validation loss and perplexity after 1000 steps."
+  ]
+}

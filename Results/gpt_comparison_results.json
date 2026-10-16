@@ -1,0 +1,16 @@
+[
+  {
+    "model": "LayerNorm GPT",
+    "validation_loss": 2.221834044456482,
+    "perplexity": 9.224233014924353,
+    "training_seconds": 18.06223242299984,
+    "steps": 1000
+  },
+  {
+    "model": "DyT GPT",
+    "validation_loss": 2.4111117768287658,
+    "perplexity": 11.146346508683168,
+    "training_seconds": 16.79019006099952,
+    "steps": 1000
+  }
+]

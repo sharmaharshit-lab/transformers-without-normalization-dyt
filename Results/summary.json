@@ -1,0 +1,16 @@
+{
+  "vit": {
+    "layernorm_test_accuracy_percent": 65.12,
+    "dyt_alpha_0_5_test_accuracy_percent": 58.81,
+    "best_test_accuracy_among_vit_comparison": "LayerNorm"
+  },
+  "gpt": {
+    "layernorm_validation_loss": 2.221834044456482,
+    "layernorm_perplexity": 9.224233014924353,
+    "dyt_alpha_0_5_validation_loss": 2.4111117768287658,
+    "dyt_alpha_0_5_perplexity": 11.146346508683168,
+    "best_validation_loss_among_gpt_comparison": "LayerNorm"
+  },
+  "best_vit_alpha_in_short_ablation": 2.0,
+  "best_gpt_alpha_among_tested_values": 1.0
+}
